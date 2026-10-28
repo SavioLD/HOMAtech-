@@ -1,7 +1,7 @@
 # HOMAtech – Karriereseite
 
 Recruiting-Landingpage der **HOMAtech GmbH**, Oberndorf-Hochmössingen.
-Ausgeschriebene Stelle: **CNC-Einrichter/-in Drehen (m/w/d)** in Vollzeit,
+Ausgeschriebene Stelle: **CNC-Einrichter Drehen (m/w/d)** in Vollzeit,
 und nur diese eine.
 
 Aufbau und Sektionen folgen 1:1 der ALWA-Karriereseite
@@ -153,7 +153,7 @@ kombiniertes `name`/`fullname`/`vollstaendiger_name`:
   "nachname": "Mustermann",
   "telefon": "0151 23456789",
   "email": "max.mustermann@beispiel.de",
-  "stelle": "CNC-Einrichter/-in Drehen (m/w/d)",
+  "stelle": "CNC-Einrichter Drehen (m/w/d)",
   "ausbildung": "Abgeschlossene Ausbildung als Zerspanungsmechaniker/-in",
   "berufserfahrung": "1 bis 3 Jahre Berufserfahrung",
   "siemens_steuerung": "Nein, bisher mit anderen Steuerungen gearbeitet (nicht erfüllt)",
