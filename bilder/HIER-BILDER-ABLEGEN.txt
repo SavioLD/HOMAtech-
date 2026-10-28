@@ -1,0 +1,21 @@
+HOMAtech Karriereseite – Bildmaterial
+=====================================
+
+Alle Fotos einfach in DIESEN Ordner (bilder/) hochladen.
+Die Dateinamen sind egal – in Schritt 2 wird daraus das Hero-Bild für die
+Seite (bilder/hero.jpg) sowie die Creatives und die Facebook-Bilder erzeugt.
+
+Gut geeignet:
+  - Maschinen (Emco, Spinner), Arbeitsraum, Siemens-Steuerung
+  - Menschen beim Rüsten, Einrichten oder Messen
+  - Team, Werkstatt, Gebäude von außen
+  - Querformat für den Hero, Hochformat für Stories/Reels (9:16)
+  - so groß wie möglich (Original aus Handy oder Kamera)
+
+Das Logo liegt bereits hier:
+  homatech-logo.png        -> Original-Logo, freigestellt aus dem Briefkopf
+  homatech-logo-web.png    -> verkleinert für die Seite
+  HOMAtech_Logo_Original.jpg -> unveränderte Original-Datei aus dem Auftrag
+
+Fehlt ein Hero-Bild, zeigt die Seite den CI-Farbverlauf – nichts geht kaputt.
+Diese .txt kann nach dem Hochladen gelöscht werden.

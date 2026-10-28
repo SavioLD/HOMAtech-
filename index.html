@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Karriere bei HOMAtech · CNC-Einrichter/-in Drehen (m/w/d) in Oberndorf-Hochmössingen</title>
+<meta name="description" content="HOMAtech GmbH in Oberndorf-Hochmössingen sucht eine/n CNC-Einrichter/-in Drehen (m/w/d) in Vollzeit. Familiäre Atmosphäre, vielseitiger Job, 100 € Weihnachts- und Urlaubsgeld jeden Monat, 30 Tage Urlaub. Jetzt in unter 60 Sekunden bewerben – ohne Lebenslauf." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#1c3344" />
+<meta name="geo.region" content="DE-BW" />
+<meta name="geo.placename" content="Oberndorf am Neckar" />
+
+<link rel="canonical" href="https://www.homatech.de/karriere/" />
+<link rel="icon" type="image/png" href="bilder/favicon.png" />
+<link rel="apple-touch-icon" href="bilder/apple-touch-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:site_name" content="HOMAtech GmbH" />
+<meta property="og:title" content="Karriere bei HOMAtech – CNC-Einrichter/-in Drehen (m/w/d)" />
+<meta property="og:description" content="Rüsten, programmieren, messen – in einem familiären Team in Hochmössingen. 100 € extra jeden Monat, 30 Tage Urlaub. Jetzt bewerben – ohne Anschreiben, ohne Lebenslauf." />
+<meta property="og:url" content="https://www.homatech.de/karriere/" />
+
+<!-- Schriften liegen lokal in fonts/ (kein Google-Fonts-Abruf, DSGVO) -->
+<link rel="preload" href="fonts/saira-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="fonts/carlito-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+
+<!-- Structured Data: JobPosting -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "CNC-Einrichter/-in Drehen (m/w/d)",
+  "description": "Rüsten und Einrichten von CNC-Universaldrehmaschinen der Hersteller Emco und Spinner mit Siemens-Steuerung. Fertigen von Kleinserien in gleichbleibend hoher Qualität. Erstellen und Optimieren von Programmen an der Maschine. Auswahl, Einrichten und Voreinstellen von Werkzeugen und Spannmitteln. Qualitätskontrolle mit gängigen Messmitteln und Dokumentation der Ergebnisse. Wartung und Pflege der Maschinen sowie Sorge für einen sauberen Arbeitsplatz.",
+  "datePosted": "2026-10-28",
+  "validThrough": "2027-04-30",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": { "@type": "Organization", "name": "HOMAtech GmbH", "sameAs": "https://www.homatech.de/" },
+  "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "streetAddress": "Am Wald 7", "addressLocality": "Oberndorf-Hochmössingen", "postalCode": "78727", "addressRegion": "BW", "addressCountry": "DE" } },
+  "qualifications": "Abgeschlossene Ausbildung im Metallbereich. Berufserfahrung. Gute Deutschkenntnisse. Teamplayer. Wünschenswert: Kenntnisse in der Siemens-Steuerung.",
+  "jobBenefits": "Weihnachts- und Urlaubsgeld (monatlich 100 €), 30 Tage Urlaub, betriebliche Altersvorsorge, JobRad, Tankgutschein bei Überstunden, kostenloser Kaffee, familiäre Atmosphäre",
+  "directApply": true
+}
+</script>
+
+<style>
+/* =====================================================================
+   HOMATECH CI
+   Alle Marken-Farben und Schriften stecken ausschließlich in diesem
+   Block. Wer das CI anpassen will, ändert nur hier.
+   ===================================================================== */
+@font-face{font-family:"Saira";font-style:normal;font-weight:400 900;font-display:swap;src:url(fonts/saira-latin-variable.woff2) format("woff2")}
+@font-face{font-family:"Carlito";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/carlito-latin-400.woff2) format("woff2")}
+@font-face{font-family:"Carlito";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/carlito-latin-700.woff2) format("woff2")}
+:root{
+  --bg:#ffffff;
+  --bg-soft:#f3f7fa;
+  --panel-2:#e2ebf2;
+  --line:rgba(28,51,68,.13);
+  --line-strong:rgba(28,51,68,.26);
+  --ink:#1b2a36;
+  --ink-soft:#44586a;
+  --ink-mute:#5f7383;
+  /* Direkt aus dem Original-Logo ausgelesen: Blau #78a1bd ("HOMA"), Rot #b62d3d ("tech") */
+  --brand:#78a1bd;
+  --brand-700:#3d6884;         /* dunkleres Logo-Blau, auf Weiß als Text lesbar */
+  --brand-900:#1c3344;         /* Navy aus dem Logo-Blau abgeleitet */
+  --brand-soft:#e8f0f6;
+  --brand-light:#b4cde0;       /* helles Logo-Blau für dunkle Flächen */
+  --cta:#b62d3d;
+  --cta-dark:#98222f;
+  --cta-soft:#f9e8ea;
+  --grad:linear-gradient(125deg,#13263a 0%,#1f3d55 48%,#3d6884 100%);
+  --f-display:"Saira",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-body:"Carlito","Calibri",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --radius:16px;
+  --shadow:0 18px 50px rgba(28,51,68,.14);
+  /* Feste Mindesthöhe des Formular-Inhalts – verhindert Springen beim
+     Schrittwechsel. Wird in der Mobile-Query NICHT aufgehoben! */
+  --form-min:520px;
+  --form-min-mobile:496px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-body);font-size:17px;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+::selection{background:var(--cta);color:#fff}
+button,a,label,input{-webkit-tap-highlight-color:rgba(120,161,189,.22)}
+.shell{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.15;letter-spacing:-.01em;color:var(--brand-900)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ---------- topbar ---------- */
+/* Volles Weiß: das Original-Logo hat einen weißen Grund und soll ohne Kante sitzen. */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(28,51,68,.06)}
+.topbar__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center}
+.brand__logo{display:none;height:38px;width:auto}
+.brand__fallback{display:flex;align-items:baseline;font-family:var(--f-display);font-weight:800;font-size:25px;letter-spacing:.01em;line-height:1}
+.brand__fallback .b1{color:var(--brand)}
+.brand__fallback .b2{color:var(--cta);font-weight:600}
+.topbar__nav{display:flex;align-items:center;gap:26px;font-size:16px;font-weight:700;color:var(--ink-soft)}
+.topbar__nav a:hover{color:var(--brand-700)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--f-display);font-weight:700;font-size:16px;padding:14px 28px;border-radius:10px;border:none;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;stroke:currentColor;flex:0 0 auto}
+.btn--primary{background:var(--cta);color:#fff;box-shadow:0 8px 24px rgba(182,45,61,.30)}
+.btn--primary:hover{background:var(--cta-dark);transform:translateY(-2px);box-shadow:0 14px 32px rgba(182,45,61,.38)}
+.btn--ghost{background:#fff;color:var(--brand-900);border:1.5px solid var(--line-strong)}
+.btn--ghost:hover{border-color:var(--brand);color:var(--brand-700)}
+.btn--white{background:#fff;color:var(--brand-900)}
+.btn--white:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(0,0,0,.18)}
+.btn--sm{padding:10px 20px;font-size:14.5px}
+.cta-short{display:none}
+@media(max-width:760px){.topbar__nav .navlink{display:none}.cta-long{display:none}.cta-short{display:inline}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;background:var(--brand-900);padding:0}
+.hero__media{position:absolute;inset:0;background-color:#13263a;background-image:var(--grad);background-size:cover;background-position:center}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,28,40,.35),transparent 60%)}
+/* Eigener Stacking-Kontext: sonst überdeckt .hero__media den Abdunkler
+   hinter dem Text (z-index:-1) und der Kontrast bricht ein. */
+.hero .shell{position:relative;z-index:1}
+.hero__inner{position:relative;display:flex;min-height:580px}
+.hero__panel{position:relative;flex:0 0 56%;max-width:660px;display:flex;flex-direction:column;justify-content:center;padding:150px 48px 56px;color:#fff}
+.hero__panel>*{text-shadow:0 1px 14px rgba(10,22,32,.5)}
+.hero__cta .btn,.hero__logo{text-shadow:none}
+.hero__panel::before{content:"";position:absolute;inset:0 auto 0 -100vw;width:calc(100vw + 62%);background:linear-gradient(112deg,rgba(16,32,46,.97) 0%,rgba(28,51,68,.93) 46%,rgba(61,104,132,.55) 100%);z-index:-1;border-radius:0 62% 62% 0 / 0 50% 50% 0;box-shadow:0 30px 80px rgba(16,32,46,.35)}
+/* Das Original-Logo gibt es nur auf Weiß – deshalb liegt es auf einer
+   weißen Plakette, statt eingefärbt zu werden. */
+.hero__logo{align-self:flex-start;margin-bottom:26px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.hero__logo img{display:none;height:44px;width:auto}
+.hero__logo .brand__fallback{font-size:30px}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand-light);margin-bottom:16px}
+.hero__eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--cta);box-shadow:0 0 0 4px rgba(182,45,61,.35)}
+.hero h1{color:#fff;font-size:clamp(30px,4.4vw,50px);font-weight:800;line-height:1.08}
+.hero h1 .hl{color:var(--brand-light)}
+.hero__sub{margin-top:14px;font-size:19px;font-weight:400;color:#e6edf3;max-width:480px}
+.hero__cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.hero__reassure{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;font-weight:700;color:#d3e0ea}
+.hero__reassure span{display:inline-flex;align-items:center;gap:7px}
+.hero__reassure svg{width:16px;height:16px;stroke:var(--brand-light)}
+@media(max-width:820px){
+  .hero__inner{min-height:0}
+  .hero__panel{flex:1 1 100%;max-width:none;padding:100px 22px 46px}
+  .hero__panel::before{inset:0 -18px;width:auto;border-radius:0;background:linear-gradient(180deg,rgba(16,32,46,.82) 0%,rgba(24,44,60,.9) 100%)}
+  .hero__media::after{background:linear-gradient(180deg,rgba(16,32,46,.2),rgba(16,32,46,.55))}
+}
+
+/* ---------- trust band ---------- */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.trust__item{background:#fff;display:flex;align-items:center;gap:13px;padding:22px 20px}
+.trust__item svg{width:26px;height:26px;stroke:var(--brand-700);flex:0 0 auto}
+.trust__item b{display:block;font-family:var(--f-display);font-weight:700;font-size:16px;color:var(--brand-900);line-height:1.2}
+.trust__item span{font-size:14px;color:var(--ink-mute)}
+@media(max-width:820px){.trust__grid{grid-template-columns:1fr 1fr}}
+
+/* ---------- sections ---------- */
+section{padding:84px 0}
+section[id],.form-card{scroll-margin-top:80px}
+.kicker{display:inline-block;font-family:var(--f-display);font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--cta);margin-bottom:14px}
+.sec-title{font-size:clamp(27px,4vw,40px);max-width:700px}
+.sec-lead{margin-top:16px;max-width:640px;color:var(--ink-soft);font-size:18.5px}
+
+/* ---------- stelle ---------- */
+.jobs{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.job{position:relative;display:flex;flex-direction:column;max-width:980px;margin:44px auto 0;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:36px 36px 32px;transition:border-color .2s ease,box-shadow .2s ease}
+.job:hover{border-color:var(--brand);box-shadow:var(--shadow)}
+.job__head{display:flex;align-items:flex-start;gap:18px}
+.job__icon{width:54px;height:54px;flex:0 0 54px;border-radius:13px;display:grid;place-items:center;background:var(--brand-soft);border:1px solid var(--line-strong)}
+.job__icon svg{width:27px;height:27px;stroke:var(--brand-700)}
+.job h3{font-size:25px;margin-bottom:2px}
+.job__meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.tag{font-family:var(--f-display);font-size:11.5px;font-weight:700;color:var(--brand-700);background:var(--brand-soft);border:1px solid var(--line);padding:5px 10px;border-radius:999px}
+.job__cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 40px;margin-top:28px}
+@media(max-width:760px){.job__cols{grid-template-columns:1fr;gap:0}}
+.job h4{font-family:var(--f-display);font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:10px}
+.job h4 small{font-family:var(--f-body);font-size:12.5px;letter-spacing:0;text-transform:none;font-weight:400}
+.job ul{list-style:none;display:grid;gap:9px;margin-bottom:24px;font-size:16px;color:var(--ink-soft)}
+.job ul li{display:flex;gap:10px}
+.job ul li::before{content:"";flex:0 0 6px;height:6px;border-radius:50%;background:var(--cta);margin-top:9px}
+.job ul.job__must li{font-weight:700;color:var(--ink)}
+.job ul.job__must li::before{background:var(--brand-900)}
+.job ul.job__plus li::before{background:var(--brand)}
+.job__offer{border-top:1px solid var(--line);padding-top:24px;margin-top:4px}
+.job__offer ul{grid-template-columns:1fr 1fr;column-gap:40px}
+@media(max-width:760px){.job__offer ul{grid-template-columns:1fr}}
+.job__foot{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px;text-align:center}
+.job__foot .btn{width:100%;max-width:420px}
+.job__foot p{font-size:14.5px;color:var(--ink-mute)}
+
+/* ---------- benefits ---------- */
+.highlight-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
+@media(max-width:760px){.highlight-grid{grid-template-columns:1fr}}
+.highlight{position:relative;overflow:hidden;border-radius:var(--radius);padding:30px 28px;background:var(--brand-900);color:#fff}
+.highlight::before{content:"";position:absolute;inset:0;background:var(--grad);opacity:.95}
+.highlight>*{position:relative}
+.highlight__ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);margin-bottom:16px}
+.highlight__ic svg{width:24px;height:24px;stroke:#fff}
+.highlight b{display:block;font-family:var(--f-display);font-weight:700;font-size:21px;margin-bottom:8px}
+.highlight p{font-size:16.5px;color:#dbe6ee}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+@media(max-width:920px){.benefit-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.benefit-grid{grid-template-columns:1fr}}
+.benefit{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:24px 22px}
+.benefit__ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--brand-soft);border:1px solid var(--line-strong);margin-bottom:14px}
+.benefit__ic svg{width:23px;height:23px;stroke:var(--brand-700)}
+.benefit b{font-family:var(--f-display);font-weight:700;font-size:17px;display:block;margin-bottom:6px;color:var(--brand-900)}
+.benefit p{font-size:15.5px;color:var(--ink-soft)}
+.benefit--money{border-color:rgba(182,45,61,.35);background:linear-gradient(180deg,#fff 0%,#fdf5f6 100%)}
+.benefit--money .benefit__ic{background:var(--cta-soft);border-color:rgba(182,45,61,.3)}
+.benefit--money .benefit__ic svg{stroke:var(--cta)}
+
+/* ---------- process ---------- */
+.process{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;counter-reset:step}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.step{position:relative;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:28px 24px}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:var(--f-display);font-weight:800;font-size:14px;color:#fff;display:inline-flex;align-items:center;justify-content:center;background:var(--cta);border-radius:8px;padding:6px 13px;margin-bottom:16px}
+.step b{font-family:var(--f-display);font-weight:700;font-size:18.5px;display:block;margin-bottom:8px;color:var(--brand-900)}
+.step p{font-size:15.5px;color:var(--ink-soft)}
+
+/* ---------- mid CTA ---------- */
+.midcta{position:relative;overflow:hidden;background:var(--brand-900)}
+.midcta::before{content:"";position:absolute;inset:0;background:var(--grad);opacity:.97}
+.midcta__in{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:44px 0}
+.midcta h2{color:#fff;font-size:clamp(23px,3.4vw,32px);max-width:640px}
+.midcta p{color:#dbe6ee;margin-top:6px;font-size:17.5px}
+
+/* ---------- form ---------- */
+.apply{position:relative;background:var(--bg-soft)}
+.apply__reassure{margin:14px auto 0;display:flex;justify-content:center;flex-wrap:wrap;gap:8px 20px;font-size:15.5px;font-weight:700;color:var(--brand-700)}
+.apply__reassure span{display:inline-flex;align-items:center;gap:7px}
+.apply__reassure svg{width:17px;height:17px;stroke:var(--brand-700)}
+.form-card{position:relative;max-width:660px;margin:36px auto 0;background:#fff;border:1.5px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.apply__contact{max-width:660px;margin:18px auto 0;text-align:center;font-size:16px;color:var(--ink-soft)}
+.apply__contact a{color:var(--brand-700);font-weight:700;text-decoration:underline;white-space:nowrap}
+.form-card__head{padding:24px 32px 0}
+.progress{height:6px;background:var(--panel-2);border-radius:999px;overflow:hidden}
+.progress__bar{height:100%;width:16.6%;background:var(--cta);border-radius:999px;transition:width .35s ease}
+.progress__label{display:flex;justify-content:space-between;font-size:13.5px;color:var(--ink-mute);margin-top:10px;font-weight:700}
+
+/* Feste Mindesthöhe: der Container ist über alle Schritte gleich hoch,
+   damit beim Wechsel nichts springt. Der Weiter-Button sitzt durch
+   margin-top:auto immer an derselben Stelle. */
+.form-card__body{padding:24px 32px 32px;min-height:var(--form-min);display:flex;flex-direction:column}
+.fstep{display:none;flex-direction:column;flex:1;animation:fadeUp .3s ease}
+.fstep.is-active{display:flex}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.fstep h3{font-size:21px;margin-bottom:6px}
+.fstep .hint{font-size:15.5px;color:var(--ink-mute);margin-bottom:16px;line-height:1.4}
+.fstep .hint b{font-weight:700;color:var(--cta)}
+.fstep .hint b.is-optional{color:var(--brand-700)}
+.choice-grid{display:grid;gap:10px}
+.choice{position:relative;display:flex;align-items:center;gap:13px;background:#fff;border:1.5px solid var(--line-strong);border-radius:10px;padding:13px 15px;cursor:pointer;transition:border-color .15s ease,background .15s ease,transform .15s ease;font-size:16.5px;font-weight:700;color:var(--ink);box-shadow:0 1px 3px rgba(28,51,68,.05);line-height:1.25}
+.choice:hover{border-color:var(--brand);transform:translateY(-1px)}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice .key{flex:0 0 28px;height:28px;display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:13px;background:var(--brand-900);border-radius:6px;color:#fff}
+.choice.is-selected{border-color:var(--brand-700);background:var(--brand-soft)}
+.choice.is-selected .key{background:var(--cta)}
+.choice small{display:block;font-weight:400;font-size:14px;color:var(--ink-mute);margin-top:2px;line-height:1.3}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:15px;font-weight:700;margin-bottom:6px;color:var(--brand-900)}
+.field input{width:100%;padding:12px 15px;font-size:16px;font-family:var(--f-body);background:#fff;border:1.5px solid var(--line-strong);border-radius:10px;color:var(--ink);outline:none;transition:border-color .15s ease,box-shadow .15s ease}
+.field input::placeholder{color:var(--ink-mute)}
+.field input:focus{border-color:var(--brand-700);box-shadow:0 0 0 3px rgba(120,161,189,.3)}
+.field input.is-invalid{border-color:#d84444}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.consent{font-size:13px;color:var(--ink-soft);margin:6px 0 2px;line-height:1.45}
+.consent a{color:var(--brand-700);text-decoration:underline}
+.fnav{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:auto;padding-top:22px}
+.btn--back{background:transparent;border:none;color:var(--ink-mute);font-size:15.5px;font-weight:700;cursor:pointer;padding:12px 6px;font-family:var(--f-body)}
+.btn--back:hover{color:var(--brand-700)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none!important;box-shadow:none!important}
+.form-error{display:none;background:rgba(216,68,68,.08);border:1px solid rgba(216,68,68,.35);color:#a62c2c;font-size:14.5px;padding:12px 15px;border-radius:10px;margin-top:12px}
+.form-error.is-visible{display:block}
+.result{display:none;flex-direction:column;align-items:center;text-align:center;padding:30px 8px;animation:fadeUp .4s ease}
+.result.is-visible{display:flex;flex:1;justify-content:center}
+.result__icon{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;background:var(--brand-soft);border:1.5px solid var(--line-strong);margin-bottom:20px}
+.result__icon svg{width:33px;height:33px;stroke:var(--brand-700)}
+.result h3{font-size:24px;margin-bottom:10px}
+.result p{color:var(--ink-soft);max-width:440px;font-size:16.5px}
+.result p.result__note{margin-top:14px;font-size:14.5px;color:var(--ink-mute)}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+
+/* ---------- faq ---------- */
+.faq{max-width:720px;margin:44px auto 0}
+.faq details{background:#fff;border:1.5px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-family:var(--f-display);font-weight:700;font-size:16.5px;color:var(--brand-900);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--cta);transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .faq__a{padding:0 22px 20px;font-size:16px;color:var(--ink-soft)}
+
+/* ---------- footer ---------- */
+footer{padding:52px 0 36px;background:var(--brand-900);color:#d3dee7}
+.footer__grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.footer__logo{display:inline-block;background:#fff;border-radius:10px;padding:9px 12px}
+.footer__logo img{display:none;height:38px;width:auto}
+.footer__logo .brand__fallback{font-size:24px}
+.footer__col p{font-size:15px;color:#a9bccb;margin-top:14px;max-width:340px}
+.footer__col b{font-family:var(--f-display);font-weight:700;font-size:15px;color:#fff}
+.footer__col ul{list-style:none;margin-top:12px;display:grid;gap:8px;font-size:15px;color:#a9bccb}
+.footer__col a:hover{color:#fff}
+.footer__legal{margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:#8fa4b5}
+.footer__legal a{color:#a9bccb}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.fstep,.result{animation:none}}
+
+/* ---------- Sticky Mobile-CTA ---------- */
+.mobile-cta{display:none}
+@media(max-width:760px){
+  .mobile-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(120%);transition:transform .3s ease}
+  .mobile-cta.is-visible{transform:none}
+  .mobile-cta .btn{width:100%;padding:16px;font-size:17px}
+  body.has-mobile-cta{padding-bottom:80px}
+}
+
+/* ---------- Mobile ---------- */
+@media(max-width:760px){
+  .shell{padding:0 18px}
+  section{padding:52px 0}
+  .topbar__inner{height:58px}
+  .brand__logo{height:31px}
+  .brand__fallback{font-size:21px}
+  /* Logo steht mobil schon in der Topbar – im Hero zählt jeder Pixel für Titel und CTA. */
+  .hero__logo{display:none}
+  .hide-sm{display:none}
+  .hero h1{font-size:30px}
+  .hero__sub{font-size:17px}
+  .hero__cta{flex-direction:column;align-items:stretch}
+  .hero__cta .btn{width:100%;padding:15px}
+  .trust__item{padding:18px 14px;gap:11px}
+  .trust__item b{font-size:15px}
+  .trust__item span{font-size:13px}
+  .kicker{font-size:11.5px}
+  .sec-title{font-size:25px}
+  .sec-lead{font-size:16.5px}
+  .job,.highlight-grid,.steps{margin-top:30px}
+  .benefit-grid{margin-top:16px}
+  .highlight-grid,.benefit-grid,.steps{gap:16px}
+  .job{padding:24px 20px}
+  .job__head{gap:14px}
+  .job__icon{width:46px;height:46px;flex-basis:46px}
+  .job h3{font-size:21px}
+  .job__cols{margin-top:22px}
+  .job ul{font-size:15.5px}
+  .midcta__in{padding:34px 0;gap:18px}
+  .midcta .btn{width:100%}
+  .form-card{margin-top:26px}
+  /* WICHTIG: min-height bleibt auch mobil gesetzt (keine Sprünge). */
+  .form-card__body{min-height:var(--form-min-mobile);padding:18px 18px 22px}
+  .form-card__head{padding:18px 18px 0}
+  .fstep h3{font-size:19px;margin-bottom:4px}
+  .fstep .hint{font-size:14.5px;margin-bottom:12px}
+  .choice-grid{gap:9px}
+  .choice{padding:11px 13px;font-size:15.5px;gap:11px}
+  .choice small{font-size:13px}
+  .field{margin-bottom:11px}
+  .field label{font-size:14px;margin-bottom:5px}
+  .field input{padding:11px 14px}
+  .consent{font-size:12.5px}
+  .fnav{padding-top:16px}
+  .result{padding:18px 4px}
+  .result__icon{width:60px;height:60px;margin-bottom:14px}
+  .result h3{font-size:21px}
+  .result p{font-size:15.5px}
+  .fnav .btn{padding:14px 18px;font-size:15.5px;flex:1}
+  .btn--back{flex:0 0 auto}
+  .footer__grid{flex-direction:column;gap:26px}
+  .footer__legal{flex-direction:column;gap:8px}
+}
+@media(max-width:380px){
+  .hero h1{font-size:27px}
+  .choice .key{flex:0 0 26px;height:26px}
+}
+/* Sehr kleine Altgeräte (≤ 340 px, z. B. 320 × 568): kompakter Modus, damit
+   auch hier jeder Schritt ohne Scrollen ins Bild passt. Die Mindesthöhe
+   bleibt über alle Schritte konstant. */
+@media(max-width:340px){
+  :root{--form-min-mobile:430px}
+  .shell{padding:0 12px}
+  .form-card{margin-top:20px}
+  .form-card__head{padding:12px 14px 0}
+  .progress__label{margin-top:6px;font-size:12.5px}
+  .form-card__body{padding:10px 14px 14px}
+  .fstep h3{font-size:17px;margin-bottom:2px}
+  .fstep .hint{font-size:13.5px;margin-bottom:8px}
+  .choice-grid{gap:7px}
+  .choice{padding:8px 11px;font-size:14.5px;gap:10px}
+  .choice small{font-size:12.5px;margin-top:0}
+  .field{margin-bottom:8px}
+  .field label{font-size:13.5px;margin-bottom:3px}
+  .field input{padding:9px 12px}
+  .frow{gap:8px}
+  .consent{font-size:11.5px;margin-top:2px}
+  .fnav{padding-top:10px}
+  .fnav .btn{padding:12px 16px}
+}
+@media(hover:none){.btn--primary:hover,.choice:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<header class="topbar">
+  <div class="shell topbar__inner">
+    <a href="#top" class="brand" aria-label="HOMAtech GmbH – Startseite">
+      <img class="brand__logo" id="logoHeader" alt="HOMAtech GmbH" width="900" height="197" />
+      <span class="brand__fallback"><span class="b1">HOMA</span><span class="b2">tech</span></span>
+    </a>
+    <nav class="topbar__nav" aria-label="Hauptnavigation">
+      <a class="navlink" href="#stelle">Die Stelle</a>
+      <a class="navlink" href="#benefits">Warum HOMAtech</a>
+      <a class="navlink" href="#ablauf">Ablauf</a>
+      <a class="btn btn--primary btn--sm" href="#bewerbung"><span class="cta-long">Jetzt bewerben</span><span class="cta-short">Bewerben</span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ STICKY MOBILE-CTA ============ -->
+<div class="mobile-cta" id="mobileCta">
+  <a class="btn btn--primary" href="#bewerbung">Jetzt in 60 Sekunden bewerben</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__media" id="heroMedia"></div>
+  <div class="shell">
+    <div class="hero__inner">
+      <div class="hero__panel">
+        <div class="hero__logo">
+          <img id="logoHero" alt="HOMAtech GmbH" width="900" height="197" />
+          <span class="brand__fallback"><span class="b1">HOMA</span><span class="b2">tech</span></span>
+        </div>
+        <span class="hero__eyebrow"><span class="dot"></span><span class="hide-sm">Oberndorf-</span>Hochmössingen · Wir stellen ein</span>
+        <h1>CNC-Einrichter/-in <span class="hl">Drehen</span> (m/w/d)</h1>
+        <p class="hero__sub">Rüsten, programmieren, messen – an Emco- und Spinner-Drehmaschinen mit Siemens-Steuerung. In einem familiären Team, mit 100&nbsp;€ extra jeden Monat und 30&nbsp;Tagen Urlaub.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#bewerbung">Jetzt bewerben
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#stelle" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5)">Stelle ansehen</a>
+        </div>
+        <div class="hero__reassure">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Lebenslauf nötig</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Anschreiben</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Antwort persönlich</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAND ============ -->
+<div class="trust">
+  <div class="shell">
+    <div class="trust__grid">
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><b>Familiär</b><span>Kurze Wege, echtes Team</span></div></div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><div><b>Vielseitig</b><span>Rüsten · Programmieren · Messen</span></div></div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></svg><div><b>+100&nbsp;€ / Monat</b><span>Weihnachts- &amp; Urlaubsgeld</span></div></div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg><div><b>30 Tage Urlaub</b><span>Plus bAV &amp; JobRad</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STELLE ============ -->
+<section class="jobs" id="stelle">
+  <div class="shell">
+    <span class="kicker">Offene Stelle</span>
+    <h2 class="sec-title">Eine Stelle. Ein Team.<br />Passt sie zu dir?</h2>
+    <p class="sec-lead">In Vollzeit an unserem Standort in Oberndorf-Hochmössingen. Du richtest ein, programmierst, misst – und bringst Kleinserien in gleichbleibend hoher Qualität auf den Weg.</p>
+
+    <article class="job reveal">
+      <div class="job__head">
+        <div class="job__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></div>
+        <div>
+          <h3>CNC-Einrichter/-in Drehen (m/w/d)</h3>
+          <div class="job__meta"><span class="tag">Vollzeit</span><span class="tag">Oberndorf-Hochmössingen</span><span class="tag">Emco &amp; Spinner</span><span class="tag">Kleinserien</span></div>
+        </div>
+      </div>
+
+      <div class="job__cols">
+        <div>
+          <h4>Deine Aufgaben</h4>
+          <ul>
+            <li>Rüsten und Einrichten von CNC-Universaldrehmaschinen der Hersteller Emco und Spinner mit Siemens-Steuerung</li>
+            <li>Fertigen von Kleinserien in gleichbleibend hoher Qualität</li>
+            <li>Erstellen und Optimieren von Programmen an der Maschine</li>
+            <li>Auswahl, Einrichten und Voreinstellen von Werkzeugen und Spannmitteln</li>
+            <li>Qualitätskontrolle mit gängigen Messmitteln und Dokumentation der Ergebnisse</li>
+            <li>Wartung und Pflege der Maschinen sowie Sorge für einen sauberen Arbeitsplatz</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Das setzen wir voraus</h4>
+          <ul class="job__must">
+            <li>Abgeschlossene Ausbildung im Metallbereich</li>
+            <li>Berufserfahrung in der Zerspanung bzw. Metallbearbeitung</li>
+            <li>Gute Deutschkenntnisse (mindestens B2)</li>
+            <li>Du bist Teamplayer und packst mit an, wenn's drauf ankommt</li>
+          </ul>
+          <h4>Wünschenswert <small>– kein Muss</small></h4>
+          <ul class="job__plus">
+            <li>Kenntnisse in der Siemens-Steuerung</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job__offer">
+        <h4>Das bieten wir dir</h4>
+        <ul>
+          <li>Weihnachts- und Urlaubsgeld – ausgezahlt mit 100&nbsp;€ jeden Monat</li>
+          <li>30 Tage Urlaub</li>
+          <li>Betriebliche Altersvorsorge (bAV)</li>
+          <li>JobRad</li>
+          <li>Tankgutschein bei Überstunden</li>
+          <li>Kostenloser Kaffee</li>
+          <li>Familiäre Atmosphäre und ein vielseitiger Job</li>
+        </ul>
+      </div>
+
+      <div class="job__foot">
+        <a class="btn btn--primary" href="#bewerbung">Jetzt bewerben
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <p>Fünf kurze Fragen · ohne Lebenslauf · unter 60 Sekunden</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section id="benefits">
+  <div class="shell">
+    <span class="kicker">Warum HOMAtech</span>
+    <h2 class="sec-title">Familiär im Umgang. Vielseitig in der Arbeit.</h2>
+    <p class="sec-lead">Bei uns läuft nicht tagein, tagaus dieselbe Serie. Du rüstest, programmierst und prüfst selbst – in einem Team, in dem man sich kennt und sich aufeinander verlassen kann.</p>
+
+    <div class="highlight-grid">
+      <div class="highlight reveal"><div class="highlight__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v12h14V9"/><path d="M12 18s-3.5-2.1-3.5-4.4A1.9 1.9 0 0 1 12 12.4a1.9 1.9 0 0 1 3.5 1.2C15.5 15.9 12 18 12 18z"/></svg></div><b>Familiäre Atmosphäre</b><p>Kurze Wege, offene Türen und Kolleg:innen, die sich gegenseitig helfen. Bei uns bist du keine Personalnummer – man kennt sich, man duzt sich, man packt gemeinsam an.</p></div>
+      <div class="highlight reveal"><div class="highlight__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div><b>Ein vielseitiger Job</b><p>Kleinserien statt Monotonie: Maschinen rüsten, Programme an der Maschine erstellen und optimieren, Werkzeuge voreinstellen, messen und dokumentieren – alles in deiner Hand.</p></div>
+    </div>
+
+    <div class="benefit-grid">
+      <div class="benefit benefit--money reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></svg></div><b>Weihnachts- &amp; Urlaubsgeld</b><p>Nicht irgendwann im Jahr, sondern jeden Monat: 100&nbsp;€ zusätzlich auf deiner Abrechnung.</p></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></div><b>30 Tage Urlaub</b><p>Genug Zeit zum Abschalten – für die Familie, das Hobby oder einfach mal nichts.</p></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg></div><b>Betriebliche Altersvorsorge</b><p>Mit der bAV sorgst du über deinen Arbeitgeber fürs Alter vor.</p></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h2l3.5 11.5"/><path d="M5.5 17.5 9 9h7l-4.5 8.5"/><path d="M8 6h3"/></svg></div><b>JobRad</b><p>Dein Wunschrad oder E-Bike über uns leasen – für den Arbeitsweg und die Freizeit.</p></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v17"/><path d="M2 22h13"/><path d="M14 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V9.5L18 6"/><path d="M6 8h5"/></svg></div><b>Tankgutschein bei Überstunden</b><p>Wenn es mal länger dauert, bleibt das nicht unbemerkt: Für Überstunden gibt es einen Tankgutschein.</p></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg></div><b>Kaffee aufs Haus</b><p>Kostenloser Kaffee – für den Start in den Tag und die Pause zwischendurch.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABLAUF ============ -->
+<section class="process" id="ablauf">
+  <div class="shell">
+    <span class="kicker">So läuft's ab</span>
+    <h2 class="sec-title">In drei Schritten zu HOMAtech.</h2>
+    <div class="steps">
+      <div class="step reveal"><b>Kurz bewerben</b><p>Fünf kurze Fragen beantworten, Kontaktdaten hinterlassen – fertig. Kein Lebenslauf, kein Anschreiben, keine Datei-Uploads.</p></div>
+      <div class="step reveal"><b>Wir melden uns persönlich</b><p>Du bekommst schnell eine Rückmeldung, und wir klären erste Fragen kurz und unkompliziert am Telefon.</p></div>
+      <div class="step reveal"><b>Kennenlernen vor Ort</b><p>Du schaust dir Fertigung, Maschinen und Team in Hochmössingen an – und wenn's passt, machen wir dir ein Angebot.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MID CTA ============ -->
+<div class="midcta">
+  <div class="shell">
+    <div class="midcta__in">
+      <div>
+        <h2>Bereit für deinen nächsten Schritt?</h2>
+        <p>Nur ein paar Klicks bis zu deiner Bewerbung – in unter 60 Sekunden.</p>
+      </div>
+      <a class="btn btn--primary" href="#bewerbung">Jetzt bewerben
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BEWERBUNG ============ -->
+<section class="apply" id="bewerbung" style="border-top:1px solid var(--line)">
+  <div class="shell">
+    <div style="text-align:center">
+      <span class="kicker">Bewerbung</span>
+      <h2 class="sec-title" style="margin:0 auto">Jetzt in unter 60 Sekunden bewerben</h2>
+      <div class="apply__reassure">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Anschreiben</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Lebenslauf</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Wir melden uns persönlich</span>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-card__head">
+        <div class="progress"><div class="progress__bar" id="progressBar"></div></div>
+        <div class="progress__label"><span id="stepLabel">Schritt 1 von 6</span><span>~60 Sek.</span></div>
+      </div>
+
+      <form class="form-card__body" id="applyForm" novalidate>
+        <input class="hp" type="text" name="firma_website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <!-- ---------- Pflicht: Ausbildung ---------- -->
+        <div class="fstep is-active">
+          <h3>Deine Ausbildung</h3>
+          <p class="hint"><b>Pflichtfrage</b> · Was hast du gelernt?</p>
+          <div class="choice-grid" data-field="ausbildung">
+            <label class="choice"><input type="radio" name="ausbildung" value="Abgeschlossene Ausbildung als Zerspanungsmechaniker/-in" data-ok="1" /><span class="key">A</span><span>Zerspanungsmechaniker/-in<small>Fachrichtung Drehen oder vergleichbar</small></span></label>
+            <label class="choice"><input type="radio" name="ausbildung" value="Andere abgeschlossene Ausbildung im Metallbereich (z. B. Industrie-, Werkzeug- oder Feinwerkmechaniker/-in)" data-ok="1" /><span class="key">B</span><span>Andere Ausbildung im Metallbereich<small>z. B. Industrie-, Werkzeug-, Feinwerkmechanik</small></span></label>
+            <label class="choice"><input type="radio" name="ausbildung" value="Ausbildung im Metallbereich noch nicht abgeschlossen" /><span class="key">C</span><span>Meine Ausbildung läuft noch</span></label>
+            <label class="choice"><input type="radio" name="ausbildung" value="Keine abgeschlossene Ausbildung im Metallbereich" /><span class="key">D</span><span>Keine Ausbildung im Metallbereich</span></label>
+          </div>
+        </div>
+
+        <!-- ---------- Pflicht: Berufserfahrung ---------- -->
+        <div class="fstep">
+          <h3>Deine Berufserfahrung</h3>
+          <p class="hint"><b>Pflichtfrage</b> · In der Zerspanung bzw. Metallbearbeitung, nach der Ausbildung.</p>
+          <div class="choice-grid" data-field="berufserfahrung">
+            <label class="choice"><input type="radio" name="berufserfahrung" value="Mehr als 3 Jahre Berufserfahrung" data-ok="1" /><span class="key">A</span><span>Mehr als 3 Jahre</span></label>
+            <label class="choice"><input type="radio" name="berufserfahrung" value="1 bis 3 Jahre Berufserfahrung" data-ok="1" /><span class="key">B</span><span>1 bis 3 Jahre</span></label>
+            <label class="choice"><input type="radio" name="berufserfahrung" value="Weniger als 1 Jahr Berufserfahrung" data-ok="1" /><span class="key">C</span><span>Weniger als 1 Jahr</span></label>
+            <label class="choice"><input type="radio" name="berufserfahrung" value="Noch keine Berufserfahrung" /><span class="key">D</span><span>Noch keine Berufserfahrung<small>z. B. direkt nach der Ausbildung</small></span></label>
+          </div>
+        </div>
+
+        <!-- ---------- Optional: Siemens-Steuerung ---------- -->
+        <div class="fstep">
+          <h3>Siemens-Steuerung</h3>
+          <p class="hint"><b class="is-optional">Optional</b> · Kein Muss – hilft uns aber bei der Einarbeitung.</p>
+          <div class="choice-grid" data-field="siemens_steuerung">
+            <label class="choice"><input type="radio" name="siemens_steuerung" value="Ja, ich richte mit Siemens-Steuerung selbstständig ein und programmiere" data-ok="1" /><span class="key">A</span><span>Ja, ich richte damit selbstständig ein<small>z. B. Sinumerik, ShopTurn</small></span></label>
+            <label class="choice"><input type="radio" name="siemens_steuerung" value="Ja, Grundkenntnisse in der Siemens-Steuerung" data-ok="1" /><span class="key">B</span><span>Ja, Grundkenntnisse</span></label>
+            <label class="choice"><input type="radio" name="siemens_steuerung" value="Nein, bisher mit anderen Steuerungen gearbeitet" /><span class="key">C</span><span>Nein, bisher andere Steuerungen<small>z. B. Fanuc, Mazatrol, Heidenhain</small></span></label>
+            <label class="choice"><input type="radio" name="siemens_steuerung" value="Nein, bisher keine Erfahrung mit CNC-Steuerungen" /><span class="key">D</span><span>Nein, noch keine CNC-Steuerung</span></label>
+          </div>
+        </div>
+
+        <!-- ---------- Pflicht: Teamplayer ---------- -->
+        <div class="fstep">
+          <h3>Arbeiten im Team</h3>
+          <p class="hint"><b>Pflichtfrage</b> · Ein Kollege kommt beim Einrichten nicht weiter. Du …</p>
+          <div class="choice-grid" data-field="teamarbeit">
+            <label class="choice"><input type="radio" name="teamarbeit" value="Schaut mit drauf – wir lösen es zusammen" data-ok="1" /><span class="key">A</span><span>… schaust mit drauf<small>und ihr löst es zusammen</small></span></label>
+            <label class="choice"><input type="radio" name="teamarbeit" value="Hilft, sobald die eigene Maschine läuft" data-ok="1" /><span class="key">B</span><span>… hilfst, sobald deine Maschine läuft</span></label>
+            <label class="choice"><input type="radio" name="teamarbeit" value="Bleibt bei der eigenen Maschine – Abstimmung im Team ist nicht so meins" /><span class="key">C</span><span>… bleibst bei deiner Maschine<small>Abstimmung im Team ist nicht so meins</small></span></label>
+          </div>
+        </div>
+
+        <!-- ---------- Pflicht: Deutschkenntnisse ---------- -->
+        <div class="fstep">
+          <h3>Deine Deutschkenntnisse</h3>
+          <p class="hint"><b>Pflichtfrage</b> · Für Arbeitsanweisungen, Prüfpläne und die Abstimmung im Team.</p>
+          <div class="choice-grid" data-field="deutschkenntnisse">
+            <label class="choice"><input type="radio" name="deutschkenntnisse" value="Muttersprache oder verhandlungssicher (C1-C2)" data-ok="1" /><span class="key">A</span><span>Muttersprache / verhandlungssicher<small>C1–C2</small></span></label>
+            <label class="choice"><input type="radio" name="deutschkenntnisse" value="Gut, ich verstehe und spreche sicher (B2)" data-ok="1" /><span class="key">B</span><span>Gut – ich spreche sicher<small>B2</small></span></label>
+            <label class="choice"><input type="radio" name="deutschkenntnisse" value="Grundkenntnisse (A2-B1)" /><span class="key">C</span><span>Grundkenntnisse<small>A2–B1</small></span></label>
+            <label class="choice"><input type="radio" name="deutschkenntnisse" value="Nur wenige Wörter (A1 oder weniger)" /><span class="key">D</span><span>Nur wenige Wörter<small>A1 oder weniger</small></span></label>
+          </div>
+        </div>
+
+        <!-- ---------- Kontaktdaten ---------- -->
+        <div class="fstep" id="stepKontakt">
+          <h3>Du hast es fast geschafft</h3>
+          <p class="hint">Wir melden uns persönlich bei dir.</p>
+          <div class="frow">
+            <div class="field"><label for="vorname">Vorname *</label><input id="vorname" name="vorname" type="text" autocomplete="given-name" placeholder="Vorname" required /></div>
+            <div class="field"><label for="nachname">Nachname *</label><input id="nachname" name="nachname" type="text" autocomplete="family-name" placeholder="Nachname" required /></div>
+          </div>
+          <div class="field"><label for="telefon">Telefonnummer *</label><input id="telefon" name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="z. B. 0151 23456789" required /></div>
+          <div class="field"><label for="email">E-Mail *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="z. B. max@beispiel.de" required /></div>
+          <p class="consent">
+            Mit dem Absenden willige ich ein, dass die HOMAtech GmbH meine Daten zur Bearbeitung meiner Bewerbung
+            verarbeitet (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO) – vertraulich und ohne Weitergabe an unbefugte Dritte.
+            <a href="https://www.homatech.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+          </p>
+          <div class="form-error" id="formError">Das hat leider nicht geklappt. Bitte versuche es noch einmal – oder schreib uns direkt: <strong>info@homatech.de</strong>.</div>
+        </div>
+
+        <!-- ---------- ERFOLG ---------- -->
+        <div class="result" id="successView">
+          <div class="result__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Bewerbung eingegangen</h3>
+          <p>Stark! Wir haben deine Bewerbung erhalten und <strong>melden uns persönlich bei dir</strong> – in der Regel kurz telefonisch. Bis bald in Hochmössingen!</p>
+        </div>
+
+        <!-- ---------- K.-O.-ABBRUCH ---------- -->
+        <div class="result" id="screenoutView">
+          <div class="result__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></div>
+          <h3>Danke für dein Interesse</h3>
+          <p>Vielen Dank für deine Zeit! Für diese Stelle haben wir klare Voraussetzungen festgelegt – nach deinen Angaben passt es aktuell leider nicht zum gesuchten Profil. Wir wünschen dir alles Gute für deinen weiteren Weg.</p>
+          <p class="result__note">Aus Versehen falsch geklickt? Seite neu laden und noch einmal starten.</p>
+        </div>
+
+        <div class="fnav" id="formNav">
+          <button type="button" class="btn--back" id="btnBack" style="visibility:hidden">← Zurück</button>
+          <button type="button" class="btn btn--primary" id="btnNext" disabled>Weiter</button>
+        </div>
+      </form>
+    </div>
+
+    <p class="apply__contact">
+      Lieber direkt schreiben oder Fragen zur Bewerbung?
+      <a href="mailto:info@homatech.de?subject=Bewerbung%20CNC-Einrichter%2F-in%20Drehen">info@homatech.de</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="shell">
+    <div style="text-align:center">
+      <span class="kicker">Häufige Fragen</span>
+      <h2 class="sec-title" style="margin:0 auto">Kurz &amp; knapp beantwortet</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Brauche ich einen Lebenslauf?</summary><div class="faq__a">Nein. Für die Bewerbung reichen die Angaben im Formular – fünf kurze Fragen und deine Kontaktdaten. Es gibt bewusst keinen Datei-Upload: Alles Weitere besprechen wir persönlich.</div></details>
+      <details><summary>Welche Voraussetzungen muss ich mitbringen?</summary><div class="faq__a">Eine abgeschlossene Ausbildung im Metallbereich, Berufserfahrung in der Zerspanung bzw. Metallbearbeitung, gute Deutschkenntnisse (mindestens B2) – und du arbeitest gern im Team. Kenntnisse in der Siemens-Steuerung sind wünschenswert, aber kein Muss.</div></details>
+      <details><summary>Ich kenne die Siemens-Steuerung noch nicht – kann ich mich trotzdem bewerben?</summary><div class="faq__a">Ja. Siemens-Kenntnisse helfen bei der Einarbeitung, sind aber keine Voraussetzung. Wenn du bisher mit anderen Steuerungen gearbeitet hast, bewirb dich trotzdem.</div></details>
+      <details><summary>Wie funktioniert das mit dem Weihnachts- und Urlaubsgeld?</summary><div class="faq__a">Statt einer Einmalzahlung bekommst du dein Weihnachts- und Urlaubsgeld monatlich ausgezahlt: 100&nbsp;€ zusätzlich auf jeder Abrechnung.</div></details>
+      <details><summary>Wie schnell bekomme ich eine Rückmeldung?</summary><div class="faq__a">Wir melden uns persönlich und schnell – in der Regel telefonisch für ein kurzes, lockeres Erstgespräch.</div></details>
+      <details><summary>Wer sieht meine Daten?</summary><div class="faq__a">Nur die für das Recruiting zuständigen Personen bei der HOMAtech GmbH. Deine Daten werden gemäß Art. 6 Abs. 1 lit. a DSGVO ausschließlich zur Bearbeitung deiner Bewerbung verwendet.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="shell">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <span class="footer__logo">
+          <img id="logoFooter" alt="HOMAtech GmbH" width="900" height="197" />
+          <span class="brand__fallback"><span class="b1">HOMA</span><span class="b2">tech</span></span>
+        </span>
+        <p>HOMAtech GmbH · Drehteile in Kleinserien, gefertigt in Oberndorf-Hochmössingen.</p>
+      </div>
+      <div class="footer__col">
+        <b>Kontakt</b>
+        <ul>
+          <li>Am Wald 7 · 78727 Oberndorf-Hochmössingen</li>
+          <li><a href="tel:+49742384068">(07423) 84068</a></li>
+          <li><a href="mailto:info@homatech.de">info@homatech.de</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <b>Rechtliches</b>
+        <ul>
+          <li><a href="https://www.homatech.de/impressum/" target="_blank" rel="noopener">Impressum</a></li>
+          <li><a href="https://www.homatech.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a></li>
+          <li><a href="https://www.homatech.de/" target="_blank" rel="noopener">homatech.de</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© 2026 HOMAtech GmbH – Alle Rechte vorbehalten.</span>
+      <span>Karriereseite von <a href="https://www.laendle-digital.com" target="_blank" rel="noopener">Ländle Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =====================================================================
+     LEAD TABLE
+     Generic-Webhook der Kachel (tableID 6ae1ec9012e21e3356d3b1c6).
+     Es wird ausschließlich bei einer vollständigen, qualifizierten
+     Bewerbung gesendet – K.-o.-Abbrüche verlassen die Seite nie.
+     ===================================================================== */
+  var WEBHOOK_URL = "https://api-v2.lead-table.com/api/webhook/generic/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFlMWVjOTAxMmUyMWUzMzU2ZDNiMWM2IiwiY3VzdG9tZXJJRCI6IjZhZTFlYzdhZjA4YzgyZTY5YTFhZDg5YiIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkzMTkxMDU2fQ.8ssxO_7tTbMLsfX2xJ46BR5dI9O126ClTY6ZWr566Ag";
+  var STELLE = "CNC-Einrichter/-in Drehen (m/w/d)";
+
+  /* ---------------------------------------------------------------------
+     SCREENING-KONFIGURATION
+     Pro Frage: Feldname (= Key im Webhook-Payload) und ob sie Pflicht ist.
+     Welche Antwort als "erfüllt" gilt, steht am Radio als data-ok="1".
+     - pflicht:true  -> eine Antwort ohne data-ok="1" beendet die Bewerbung
+                        sofort (K.-o., kein Lead).
+     - pflicht:false -> der Bewerber kommt normal weiter; eine Antwort ohne
+                        data-ok="1" wird übertragen, mit "(nicht erfüllt)"
+                        markiert und zusätzlich im Feld "nicht_erfuellt"
+                        aufgeführt.
+     --------------------------------------------------------------------- */
+  var QUESTIONS = [
+    { field:"ausbildung",        label:"Ausbildung im Metallbereich", pflicht:true  },
+    { field:"berufserfahrung",   label:"Berufserfahrung",             pflicht:true  },
+    { field:"siemens_steuerung", label:"Siemens-Steuerung",           pflicht:false },
+    { field:"teamarbeit",        label:"Teamplayer",                  pflicht:true  },
+    { field:"deutschkenntnisse", label:"Deutschkenntnisse",           pflicht:true  }
+  ];
+
+  /* ---------- Original-Logo laden (Fallback: Schriftzug) ---------- */
+  function loadLogo(img, url){
+    if (!img) return;
+    var probe = new Image();
+    probe.onload = function(){
+      img.src = url; img.style.display = "block";
+      var fb = img.parentNode.querySelector(".brand__fallback"); if (fb) fb.style.display = "none";
+    };
+    probe.src = url;
+  }
+  ["logoHeader","logoHero","logoFooter"].forEach(function(id){ loadLogo(document.getElementById(id), "bilder/homatech-logo-web.png"); });
+
+  /* ---------- Hero-Foto ----------
+     Erstes vorhandene Bild aus der Liste wird genommen. Fehlt es, bleibt
+     der CI-Farbverlauf stehen – nie ein kaputtes Bild. */
+  var HERO_IMG = ["bilder/hero.jpg","bilder/hero.jpeg","bilder/hero.png","bilder/hero.webp"];
+  (function tryNext(i){
+    if (i >= HERO_IMG.length) return;
+    var probe = new Image();
+    probe.onload  = function(){ document.getElementById("heroMedia").style.backgroundImage = "url('" + HERO_IMG[i] + "')"; };
+    probe.onerror = function(){ tryNext(i+1); };
+    probe.src = HERO_IMG[i];
+  })(0);
+
+  var form=document.getElementById("applyForm");
+  var steps=Array.prototype.slice.call(form.querySelectorAll(".fstep")), TOTAL=steps.length;
+  var bar=document.getElementById("progressBar"), label=document.getElementById("stepLabel");
+  var btnNext=document.getElementById("btnNext"), btnBack=document.getElementById("btnBack"), nav=document.getElementById("formNav");
+  var errBox=document.getElementById("formError"), successEl=document.getElementById("successView"), screenoutEl=document.getElementById("screenoutView");
+  var current=1, submitting=false, locked=false;
+
+  function stepEl(n){ return steps[n-1]; }
+  function checked(name){ return form.querySelector('input[name="'+name+'"]:checked'); }
+  function selectedValue(name){ var c=checked(name); return c?c.value:""; }
+  /* Erfüllt der gewählte Radio-Wert das Kriterium? (data-ok="1") */
+  function answerOk(name){ var c=checked(name); return !!(c && c.getAttribute("data-ok")==="1"); }
+  function questionAt(n){
+    var grid=stepEl(n).querySelector(".choice-grid"); if(!grid) return null;
+    var f=grid.getAttribute("data-field");
+    for (var i=0;i<QUESTIONS.length;i++){ if (QUESTIONS[i].field===f) return QUESTIONS[i]; }
+    return null;
+  }
+
+  /* Reveal */
+  var revealEls=document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window){ var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("is-in"); io.unobserve(e.target); } }); },{threshold:.12}); revealEls.forEach(function(el){ io.observe(el); }); }
+  else revealEls.forEach(function(el){ el.classList.add("is-in"); });
+
+  /* Sticky Mobile-CTA */
+  var mobileCta=document.getElementById("mobileCta"), heroEl=document.getElementById("top"), cardEl=document.querySelector(".form-card"), footerEl=document.querySelector("footer");
+  if (mobileCta && "IntersectionObserver" in window){
+    document.body.classList.add("has-mobile-cta");
+    var pastHero=false, atForm=false, atFooter=false;
+    var updateCta=function(){ mobileCta.classList.toggle("is-visible", pastHero && !atForm && !atFooter); };
+    new IntersectionObserver(function(e){ pastHero=!e[0].isIntersecting; updateCta(); },{threshold:0}).observe(heroEl);
+    new IntersectionObserver(function(e){ atForm=e[0].isIntersecting; updateCta(); },{rootMargin:"0px 0px -120px 0px",threshold:0}).observe(cardEl);
+    if (footerEl) new IntersectionObserver(function(e){ atFooter=e[0].isIntersecting; updateCta(); },{threshold:0}).observe(footerEl);
+  }
+
+  function stepValid(n){
+    var el=stepEl(n), radios=el.querySelectorAll('input[type="radio"]');
+    if (radios.length) return Array.prototype.some.call(radios,function(r){ return r.checked; });
+    var ok=true;
+    el.querySelectorAll("input[required]").forEach(function(inp){
+      if(!inp.value.trim()) ok=false;
+      if(inp.type==="email"&&inp.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(inp.value.trim())) ok=false;
+      if(inp.type==="tel"&&inp.value&&inp.value.replace(/\D/g,"").length<6) ok=false;
+    });
+    return ok;
+  }
+
+  /* ---------------------------------------------------------------------
+     MOBILE LAUFRUHE
+     render() verändert ausschließlich Klassen, Breite und Text. Es gibt
+     bewusst KEIN window.scrollTo, KEIN scrollIntoView, KEIN focus() und
+     keinen Hash-Sprung beim Schrittwechsel – der Viewport bleibt exakt
+     dort stehen, wo der Nutzer gerade ist. Die feste Mindesthöhe
+     (--form-min / --form-min-mobile) hält den Container stabil.
+     --------------------------------------------------------------------- */
+  function render(){
+    if (locked) return;
+    steps.forEach(function(s,i){ s.classList.toggle("is-active", i===current-1); });
+    successEl.classList.remove("is-visible"); screenoutEl.classList.remove("is-visible");
+    nav.style.display="flex";
+    bar.style.width=(current/TOTAL*100)+"%";
+    label.textContent="Schritt "+current+" von "+TOTAL;
+    btnBack.style.visibility=current>1?"visible":"hidden";
+    btnNext.textContent=current===TOTAL?"Bewerbung absenden":"Weiter";
+    btnNext.disabled=!stepValid(current);
+    errBox.classList.remove("is-visible");
+  }
+
+  function next(){
+    if (locked || !stepValid(current) || submitting) return;
+    /* K.-o.-Prüfung: Pflichtfrage nicht erfüllt -> sofortiger Abbruch. */
+    var q = questionAt(current);
+    if (q && q.pflicht && !answerOk(q.field)){ showScreenout(); return; }
+    if (current===TOTAL){ submit(); return; }
+    current++; render();
+    /* Kein Scroll-Aufruf – siehe "MOBILE LAUFRUHE" oben. */
+  }
+  btnNext.addEventListener("click", next);
+  btnBack.addEventListener("click", function(){ if(current>1&&!submitting&&!locked){ current--; render(); } });
+
+  var advanceTimer=null;
+  form.querySelectorAll(".choice-grid").forEach(function(grid){
+    grid.addEventListener("change", function(){
+      grid.querySelectorAll(".choice").forEach(function(c){ c.classList.toggle("is-selected", c.querySelector("input").checked); });
+      btnNext.disabled=!stepValid(current);
+      /* Ein Timer für alle: schnelles Umklicken löst nur EINEN Schrittwechsel aus. */
+      clearTimeout(advanceTimer); advanceTimer=setTimeout(next,300);
+    });
+  });
+  document.getElementById("stepKontakt").querySelectorAll("input[required]").forEach(function(inp){
+    inp.addEventListener("input", function(){ inp.classList.remove("is-invalid"); btnNext.disabled=!stepValid(current); });
+    inp.addEventListener("change", function(){ btnNext.disabled=!stepValid(current); });
+  });
+  form.addEventListener("keydown", function(ev){ if(ev.key==="Enter"){ ev.preventDefault(); if(!btnNext.disabled) next(); } });
+  form.addEventListener("submit", function(ev){ ev.preventDefault(); });
+
+  function heute(){ var d=new Date(); return ("0"+d.getDate()).slice(-2)+"."+("0"+(d.getMonth()+1)).slice(-2)+"."+d.getFullYear(); }
+
+  /* ---------------------------------------------------------------------
+     PAYLOAD
+     Jedes Feld genau einmal. Vorname und Nachname bleiben getrennt –
+     es gibt bewusst KEIN kombiniertes name/fullname/vollstaendiger_name,
+     damit der Name in der Lead Table nicht doppelt erscheint.
+     --------------------------------------------------------------------- */
+  function collect(){
+    function text(name){ var inp=form.querySelector('input[name="'+name+'"]:not([type="radio"])'); return inp?inp.value.trim():""; }
+    var data = {
+      vorname:  text("vorname"),
+      nachname: text("nachname"),
+      telefon:  text("telefon"),
+      email:    text("email"),
+      stelle:   STELLE
+    };
+    var offen=[];
+    QUESTIONS.forEach(function(q){
+      var v=selectedValue(q.field);
+      if (!q.pflicht && !answerOk(q.field)){ offen.push(q.label); v+=" (nicht erfüllt)"; }
+      data[q.field]=v;
+    });
+    data.nicht_erfuellt = offen.length ? offen.join(", ") : "–";
+    data.datum          = heute();
+    data.datenschutz    = "Ja (Einwilligung mit Absenden, Art. 6 Abs. 1 lit. a DSGVO)";
+    data.quelle         = "Karriere-Landingpage HOMAtech";
+    data.seite          = location.href;
+    return data;
+  }
+
+  function submit(){
+    /* Honeypot: Bots füllen das versteckte Feld – still beenden, kein Lead. */
+    if (form.querySelector('input[name="firma_website"]').value){ finishSuccess(); return; }
+    submitting=true; btnNext.disabled=true; btnNext.textContent="Wird gesendet …"; errBox.classList.remove("is-visible");
+    var payload=JSON.stringify(collect());
+    function fail(){ submitting=false; btnNext.disabled=false; btnNext.textContent="Bewerbung absenden"; errBox.classList.add("is-visible"); }
+    fetch(WEBHOOK_URL,{ method:"POST", headers:{ "Content-Type":"application/json" }, body:payload })
+      .then(function(res){
+        if (res.ok) { finishSuccess(); return; }
+        /* Server hat geantwortet, aber mit Fehler: KEIN zweiter Versuch im
+           Hintergrund (sonst droht ein doppelter Lead) – der Bewerber kann
+           erneut absenden. */
+        fail();
+      }, function(){
+        /* Netzwerk-/CORS-Fehler: die Anfrage kam nicht durch – einmal als
+           "simple request" (no-cors, text/plain) nachsenden. */
+        return fetch(WEBHOOK_URL,{ method:"POST", mode:"no-cors", headers:{ "Content-Type":"text/plain" }, body:payload })
+          .then(finishSuccess, fail);
+      });
+  }
+
+  /* Abschluss-Zustände gelten nur für den aktuellen Besuch – ein Neuladen
+     startet frisch (kein dauerhaftes Sperren). */
+  function lockForm(){ locked=true; clearTimeout(advanceTimer); nav.style.display="none"; steps.forEach(function(s){ s.classList.remove("is-active"); }); bar.style.width="100%"; }
+  function finishSuccess(){ lockForm(); screenoutEl.classList.remove("is-visible"); successEl.classList.add("is-visible"); label.textContent="Fertig"; }
+  function showScreenout(){ lockForm(); successEl.classList.remove("is-visible"); screenoutEl.classList.add("is-visible"); label.textContent="Danke"; }
+
+  render();
+})();
+</script>
+<!-- WEBUNDO Analytics -->
+<script src="https://analytics.laendle-digital.com/tracker.js" data-website-id="homatech_gmbh" defer></script>
+</body>
+</html>
