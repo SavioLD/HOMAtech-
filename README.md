@@ -7,6 +7,7 @@ und nur diese eine.
 Aufbau und Sektionen folgen 1:1 der ALWA-Karriereseite
 (`saviold.github.io/alwa-gmbh`): Topbar, Hero, Trust-Band, Stelle, Benefits,
 Ablauf, Mid-CTA, Bewerbung, FAQ und Footer, dazu der Sticky-CTA auf dem Handy.
+Auf Wunsch ergänzt: die Bildsektion „Einblicke“ nach der Stelle.
 
 ## Inhalt
 
@@ -207,8 +208,14 @@ die Anfrage gar nicht durchkommt (Netzwerk/CORS), wird sie einmal als
 |-------|---------------|
 | `bilder/cnc-einrichter.jpg` | Original-Foto (Einrichter an der Drehmaschine), 640 × 960 |
 | `bilder/cnc-einrichter@2x.jpg` | daraus: 2× hochgerechnet (Lanczos) und leicht nachgeschärft – Hero und Creatives |
+| `bilder/fertigung.jpg` (+ `@2x`) | Foto Drehzentrum mit Bedienpult – Sektion „Einblicke“ |
+| `bilder/werkstatt.jpg` | Foto aus der Werkstatt – Sektion „Einblicke“ |
 | `bilder/homatech-logo.png` | Original-Logo – Creatives, Facebook |
 | `bilder/homatech-logo-web.png` | Original-Logo, verkleinert – Topbar, Hero, Footer |
+
+Die Sektion **„Einblicke“** (zwischen Stelle und „Warum HOMAtech“) zeigt alle
+drei Fotos als Bildraster mit kurzen Bildunterschriften; die Creatives
+verwenden weiterhin nur das Einrichter-Foto.
 
 Im **Hero** steht das Foto auf dem Desktop rechts neben dem Text und läuft
 weich in den Verlauf aus; mobil liegt es abgedunkelt hinter dem Text. Das
