@@ -11,7 +11,8 @@ Ablauf, Mid-CTA, Bewerbung, FAQ und Footer, dazu der Sticky-CTA auf dem Handy.
 ## Inhalt
 
 - `index.html`: die komplette Seite (self-contained, kein Build-Schritt nötig)
-- `bilder/`: Logo, Favicon; hier kommt das Bildmaterial hin (siehe `bilder/HIER-BILDER-ABLEGEN.txt`)
+- `bilder/`: Logo, Favicon und Foto (siehe „Bildmaterial“)
+- `creatives/`: Meta-Ads-Creatives, Facebook-Bilder, Werbetexte und der Generator `build.mjs`
 - `fonts/`: Schriften als woff2, lokal eingebunden (kein Abruf bei Google, DSGVO)
 - `.nojekyll`: sorgt dafür, dass GitHub Pages die Dateien 1:1 ausliefert
 
@@ -49,6 +50,8 @@ Farben und Schriften stecken **ausschließlich** im `:root`-Block oben in
   Weil es nur eine Variante auf Weiß gibt, sitzt es auf dunklem Grund (Hero,
   Footer) auf einer weißen Plakette statt eingefärbt zu werden. Die Topbar ist
   deshalb voll weiß. Das Favicon ist das Bildzeichen aus demselben Logo.
+  Der weiße Grund war im JPEG minimal grau verrauscht (254 statt 255) und ist
+  auf reines Weiß gesetzt; die Logofarben selbst sind unverändert.
 
 ## Die Stelle
 
@@ -191,5 +194,69 @@ die Anfrage gar nicht durchkommt (Netzwerk/CORS), wird sie einmal als
 - **E-Mail-Benachrichtigung**: anders als bei ALWA ist keine eingebaut, weil
   für HOMAtech kein eigener Web3Forms-Key vorliegt. Mit Key ist das eine
   kleine Ergänzung.
-- **Hero-Foto**: folgt mit dem Bildmaterial. Die Seite lädt automatisch
-  `bilder/hero.jpg`; bis dahin steht der CI-Farbverlauf.
+- **Vorschaubild beim Teilen** (`og:image`) zeigt auf
+  `https://saviold.github.io/HOMAtech-/creatives/og-image.jpg`. Zieht die Seite
+  auf eine andere Adresse um, diese URL im `<head>` anpassen.
+- **Stellentitel**: aktuell „CNC-Einrichter Drehen (m/w/d)“. Bei einer anderen
+  Variante: `index.html`, `creatives/build.mjs` (`STELLE`, Motive) und
+  `creatives/werbetexte.md` anpassen, dann `node creatives/build.mjs`.
+
+## Bildmaterial
+
+| Datei | verwendet für |
+|-------|---------------|
+| `bilder/cnc-einrichter.jpg` | Original-Foto (Einrichter an der Drehmaschine), 640 × 960 |
+| `bilder/cnc-einrichter@2x.jpg` | daraus: 2× hochgerechnet (Lanczos) und leicht nachgeschärft – Hero und Creatives |
+| `bilder/homatech-logo.png` | Original-Logo – Creatives, Facebook |
+| `bilder/homatech-logo-web.png` | Original-Logo, verkleinert – Topbar, Hero, Footer |
+
+Im **Hero** steht das Foto auf dem Desktop rechts neben dem Text und läuft
+weich in den Verlauf aus; mobil liegt es abgedunkelt hinter dem Text. Das
+Hochformat passt so ohne starkes Hochskalieren.
+
+Das Foto ist mit 640 × 960 px eher klein. Für noch schärfere Creatives
+einfach eine größere Version derselben Aufnahme (oder weitere Fotos) in
+`bilder/` legen und neu rendern.
+
+## Creatives (Meta Ads) + Facebook-Seite
+
+Alles in `creatives/`, gerendert mit **einem** Befehl:
+
+```bash
+node creatives/build.mjs
+```
+
+Das Skript baut jede Datei aus HTML/CSS im CI der Karriereseite: gleiche
+Farben, gleiche Schriften (aus `fonts/`, eingebettet), Original-Logo
+unverändert. Hell, mit roten Akzenten und Diagonalen im 45°-Winkel des
+Logo-Bildzeichens.
+
+**3 Motive × 4 Formate = 12 Creatives**
+
+| Motiv | Ansatz | Störer | CTA |
+|-------|--------|--------|-----|
+| `stelle` | Stelle direkt ansprechen: „CNC-Einrichter Drehen (m/w/d)“ | +100 € jeden Monat | In 60 Sek. bewerben |
+| `geld` | Benefit voran: „100 € extra. Jeden Monat.“ | 30 Tage Urlaub | Jetzt bewerben |
+| `check` | Qualifizierer: „Rüsten. Programmieren. Messen.“ + K.-o.-Kriterien | Familiär & vielseitig | Passt? Jetzt bewerben |
+
+| Suffix | Format | Größe |
+|--------|--------|-------|
+| `-4x5` | Instagram/Facebook-Beitrag | 1080 × 1350 |
+| `-1x1` | Beitrag quadratisch | 1080 × 1080 |
+| `-9x16` | Story/Reels (Safe Zones oben 270 px, unten 380 px frei) | 1080 × 1920 |
+| `-quer` | Querformat 1,91 : 1 | 1920 × 1005 |
+
+Dazu:
+
+| Datei | Größe | Hinweis |
+|-------|-------|---------|
+| `facebook-profilbild.png` | 1080 × 1080 | Logo mittig, großer Rand – rund beschnitten bleibt alles sichtbar |
+| `facebook-titelbild.png` | 1640 × 856 | Logo + Claim in der Sicherheitszone 1092 × 616, unten rechts frei |
+| `og-image.jpg` | 1200 × 630 | Vorschaubild beim Teilen des Links |
+| `werbetexte.md` | – | 3 Textvarianten, mit jedem Creative kombinierbar |
+
+Der Generator prüft bei jedem Lauf, dass nichts über den Rand ragt und
+sich keine Texte, Chips, Störer oder Buttons überlappen; sonst bricht er
+mit Meldung ab. Die Headline wird automatisch auf volle Breite gesetzt, der
+Text im Störer-Kreis automatisch eingepasst. Neues Motiv: Eintrag in
+`MOTIVE`. Neues Format: Eintrag in `FORMATE` und `LAYOUT_CSS`.

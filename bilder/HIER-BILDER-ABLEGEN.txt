@@ -12,6 +12,10 @@ Gut geeignet:
   - Querformat für den Hero, Hochformat für Stories/Reels (9:16)
   - so groß wie möglich (Original aus Handy oder Kamera)
 
+Bereits eingebaut:
+  cnc-einrichter.jpg       -> Foto Einrichter an der Drehmaschine (Original)
+  cnc-einrichter@2x.jpg    -> daraus hochgerechnet, für Hero und Creatives
+
 Das Logo liegt bereits hier:
   homatech-logo.png        -> Original-Logo, freigestellt aus dem Briefkopf
   homatech-logo-web.png    -> verkleinert für die Seite
